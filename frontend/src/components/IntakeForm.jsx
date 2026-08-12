@@ -163,7 +163,7 @@ export default function IntakeForm() {
                 <span style={{ fontFamily: FONTS.mono, fontSize: 11, color: TEXT_MUTED }}>{s.capacityAvailable}% open</span>
               </button>
             ))}
-            {!loadingList && existingStudents.length === 0 && <span style={{ fontSize: 13, color: TEXT_MUTED }}>No students registered yet — be the first.</span>}
+            {!loadingList && existingStudents.length === 0 && <span style={{ fontSize: 13, color: TEXT_MUTED }}>No students registered yet.</span>}
           </div>
         </div>
 
