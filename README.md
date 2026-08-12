@@ -1,4 +1,4 @@
-# MLIS-L Agent
+# MMLIS-L Agent
 
 An agent for assigning research topics to students based on
 their self-reported skills and current workload; and on future work from recent arXiv papers.
