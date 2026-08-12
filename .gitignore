@@ -3,8 +3,7 @@ dist/
 .env
 *.local
 
-# SQLite database and its journal files — this is your lab's live data,
-# don't commit it (also means back it up separately, see README)
+# SQLite database and its journal files
 backend/data/*.sqlite
 backend/data/*.sqlite-*
 !backend/data/.gitkeep
