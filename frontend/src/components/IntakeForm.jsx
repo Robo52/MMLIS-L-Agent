@@ -169,8 +169,8 @@ export default function IntakeForm() {
 
         <form onSubmit={handleSave} style={{ background: "#FFFFFF", border: `1px solid ${BORDER}`, borderRadius: 10, padding: 28 }}>
           <div style={{ display: "flex", gap: 16 }}>
-            <div style={{ flex: 1 }}><Field label="Full Name"><input style={inputStyle} value={name} onChange={(e) => setName(e.target.value)} placeholder="Jordan Reyes" /></Field></div>
-            <div style={{ flex: 1 }}><Field label="Email"><input style={inputStyle} value={email} onChange={(e) => setEmail(e.target.value)} placeholder="jreyes@university.edu" /></Field></div>
+            <div style={{ flex: 1 }}><Field label="Full Name"><input style={inputStyle} value={name} onChange={(e) => setName(e.target.value)} placeholder="jacob james" /></Field></div>
+            <div style={{ flex: 1 }}><Field label="Email"><input style={inputStyle} value={email} onChange={(e) => setEmail(e.target.value)} placeholder="jacob.james@mines.sdsmt.edu" /></Field></div>
           </div>
 
           <div style={{ display: "flex", gap: 16 }}>
@@ -181,7 +181,7 @@ export default function IntakeForm() {
                 </select>
               </Field>
             </div>
-            <div style={{ flex: 1 }}><Field label="Advisor"><input style={inputStyle} value={advisor} onChange={(e) => setAdvisor(e.target.value)} placeholder="Prof. Nakamura" /></Field></div>
+            <div style={{ flex: 1 }}><Field label="Advisor"><input style={inputStyle} value={advisor} onChange={(e) => setAdvisor(e.target.value)} placeholder="Dr. Hoover" /></Field></div>
           </div>
 
           <Field label="Research Interests" hint="Select all subfields you'd want new work assigned in.">
@@ -232,7 +232,7 @@ export default function IntakeForm() {
 
           <button type="submit" style={{ width: "100%", padding: "13px", borderRadius: 6, border: "none", background: status === "saved" ? GREEN : status === "error" ? RED : BLUE, color: "#FFFFFF", fontWeight: 700, fontSize: 14, cursor: "pointer" }}>
             {status === "saving" && "Saving…"}
-            {status === "saved" && "Saved ✓"}
+            {status === "saved" && "Saved"}
             {status === "error" && "Name is required"}
             {status === "idle" && (studentId ? "Update profile" : "Save profile")}
           </button>
